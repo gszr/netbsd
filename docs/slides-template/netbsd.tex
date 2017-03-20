@@ -1,0 +1,91 @@
+%
+% Slide template for for NetBSD
+% Based on https://wiki.freebsd.org/201309DevSummit
+%
+% It requires LaTeX and LaTeX Beamer [1] to compile.
+% pdfLaTeX is recommended for compilation as it produces
+% PDF file immediately.
+%
+% It is also recommended to convert images to PDF
+% by using ImageMagick ("convert") before including them.
+%
+% [1] http://latex-beamer.sourceforge.net
+%
+
+\documentclass{beamer}
+
+\usepackage{url}
+\usepackage[english]{babel}
+\usepackage{verbatim}
+\usepackage{graphicx}
+
+\usetheme{netbsd}
+
+\title{NetBSD kernel Lua}
+\author{Guilherme Salazar \\ \url{salazar@NetBSD.org}}
+\institute{\includegraphics{logo.png}}
+\date{2016}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Frame Title}
+
+\begin{itemize}
+\item Item 1
+\item Item 2
+\item Item 3
+\item ...
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{A Frame with Table}
+
+You can see a table on this slide.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{|lcr|}
+\hline
+A & B & C \\
+\hline
+Line 1 & Value 1 & Description 1 \\
+Line 2 & Value 2 & Description 2 \\
+Line 3 & Value 3 & Description 3 \\
+\hline
+\end{tabular}
+\end{center}
+
+\bigskip
+\bigskip
+
+\end{frame}
+
+\begin{frame}
+\frametitle{A Frame with an Image}
+
+You can see an image on this slide.
+
+\bigskip
+
+\begin{center}
+\includegraphics{logo.png}
+\end{center}
+
+\bigskip
+\bigskip
+
+\end{frame}
+
+\begin{frame}
+\begin{center}
+{\huge Perguntas?}
+\end{center}
+\end{frame}
+
+\end{document}

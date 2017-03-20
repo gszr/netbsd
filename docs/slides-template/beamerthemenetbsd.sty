@@ -1,0 +1,20 @@
+\DeclareOptionBeamer{compress}{\beamer@compresstrue}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+\renewcommand{\insertnavigation}[1]{}
+
+\usecolortheme{whale}
+\useinnertheme{circles}
+\useoutertheme[footline=authortitle,subsection=false]{miniframes}
+
+\definecolor{orange}{HTML}{F26711}
+\definecolor{grey}{HTML}{666666}
+
+\setbeamercolor{palette tertiary}{bg=orange}
+\setbeamercolor{structure}{fg=orange}
+\setbeamercolor{normal text}{fg=grey}
+\logo{\includegraphics{logo.png}}
+\mode
+<all>
